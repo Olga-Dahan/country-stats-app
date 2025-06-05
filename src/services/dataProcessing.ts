@@ -25,12 +25,12 @@ export async function getData(url: string): Promise<CountriesResponse[]> {
     }
 
     const countriesJson: CountriesResponse[] = await response.json();
-    document.getElementById("error").textContent = "";
+    document.getElementById("error")!.textContent = "";
     return countriesJson;
 
   } catch (err: any) {
 
-    document.getElementById("error").textContent = err.message || "An error occurred while fetching data.";
+    document.getElementById("error")!.textContent = err.message || "An error occurred while fetching data.";
     document.getElementById("table-population")!.innerHTML = "";
     document.getElementById("table-region")!.innerHTML = "";
     document.getElementById("table-currency")!.innerHTML = "";
