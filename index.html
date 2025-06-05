@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Stats App</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="dist/main.js" type="module"></script>
+</head>
+
+<body>
+  <h3>Get information about countries via a RESTful API</h3>
+
+  <div class="form-controls">
+    <div class="top-row">
+      <input id="load-all-btn" type="submit" value="Get All Countries">
+    </div>
+
+    <form class="bottom-row">
+      <input type="text" id="search-input" placeholder="Search by country name">
+      <input id="search-btn" type="submit" value="Search">
+    </form>
+  </div>
+
+  <div id="stats-total"></div>
+  <div id="error"></div>
+
+  <div class="tables-row">
+    <div class="data" id="table-population"></div>
+    <div class="data" id="table-region"></div>
+    <div class="data" id="table-currency"></div>
+  </div>
+
+
+</body>
+
+</html>
