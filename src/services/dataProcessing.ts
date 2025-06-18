@@ -47,7 +47,7 @@ export function prepareData(countriesJson: CountriesResponse[]): Country[] {
     officialName: country.name.official,
     population: country.population,
     region: country.region,
-    currency: Object.keys(country.currencies ?? {})
+    currency: Object.keys(country.currencies ?? {})   // => ["USD", "EUR"]
   }));
 }
 
@@ -98,7 +98,7 @@ export function computeTableCurrency(countries: Country[]): void {
 
   countries.forEach(c => {
     if (c.currency) {
-      c.currency.forEach(code => codes.add(code));
+      c.currency.forEach(currency => codes.add(currency));
     }
   });
 
