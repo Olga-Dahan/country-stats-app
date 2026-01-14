@@ -7,5 +7,7 @@ This is a simple web application built with **TypeScript**, **HTML**, and **CSS*
 - Display total number of countries, total and average population
 - Group countries by region and currency
 
+https://olga-dahan.github.io/country-stats-app/
+
 
 
